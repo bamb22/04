@@ -1,0 +1,480 @@
+@charset "utf-8";
+
+@import url(reset.css);
+
+
+/* ********* 전체 레이아웃 구성시작 ********* */
+
+body{
+	background: url(../images/sub/sub_bg.gif) 0 0 repeat-x;
+}
+
+#wrap, #header, #contents, #footer{
+	width: 100%;
+}
+.container{
+	width: 1200px; padding: 0 15px;
+	margin: auto;
+}
+#header{height: 105px; padding: 21px 0;}
+#footer{height: 123px; background-color: #333;}
+
+
+/* ********* 공통 영역 선언 시작 ********* */
+
+/* ***** header Area Start ****** */
+
+/* Site Logo */
+#header h1{
+	width: 136px; height: 63px; float: left;
+}
+#header h1 a{
+	width: 100%; height: 100%;
+	background: url(../images/index/i_logo.png) 0 0 no-repeat;
+}
+
+/* Gnb */
+#header .gnb{
+	width: 610px; height: 63px; float: right;
+}
+#header .gnb li{float: left; height: 63px;}
+#header .gnb li a{
+	display: block; padding: 0 20px; height: 63px;
+	font: bold 1.2em/63px 'Nanum Gothic',sans-serif;
+	position: relative;	
+}
+#header .gnb li a:hover{color: #cf3d0f;}
+#header .gnb li a:hover:after{
+	content:''; display: block; 
+	width: 100%; height: 3px;
+	background-color: #cf3d0f;
+	position: absolute; left: 0; top: -21px;
+}
+
+
+/* ***** Contents Area Start ***** */
+/* Page Title Area Start */
+
+#p-title{
+	width: 100%; height: 105px;
+	padding: 21px 0;
+}
+
+#p-title .container{
+	height: 100%; position: relative;
+}
+
+#p-title h2{
+	width: 570px; height: 42px;
+	font: 2.6em/42px 'Nanum Gothic',sans-serif;
+}
+
+#p-title p{
+	width: 770px; height: 21px;	
+	line-height: 21px;
+}
+
+#p-title .page-navi{
+	width: 300px; height: 21px;
+	text-align: right;
+	font: bold 1.3em/21px 'Nanum Gothic',sans-serif;
+	position: absolute; right: 70px; bottom: 0;
+}
+
+#p-title .page-navi em{
+	color: #c00; margin-left: 10px;
+}
+
+
+/* ***** footer Area Start ****** */
+#footer p{
+	width: 100%; height: 123px;
+	font: 1.3em/123px 'Lato',sans-serif;
+	text-align: center; color: #fff;
+	letter-spacing: 1px;
+}
+
+
+/* Button Style Settings */
+
+.btn{	
+	display: block;	color: #fff; text-align: center;
+	font: bold 1.4em/42px 'Nanum Gothic',sans-serif;
+}
+
+/* Button Style1 */
+.btn1{
+	width: 170px; height: 42px;
+	background-color: #ad5251;
+}
+.btn1:hover{background-color: #50adae;}
+
+/* Button Style2 */
+.btn2{
+	width: 100px; height: 32px;
+	line-height: 32px; font-size: 1em;
+	border: 1px solid #333; color: #2d2d2d;
+	background-color: #fff;
+}
+.btn2:hover{
+	color: #fff;
+	background-color: #333;
+}
+
+/* Button Style3 */
+.btn3{
+	width: 170px; height: 42px;
+	color: #1d1d1d; border: 2px solid #979797;
+	font-size: 1em; 
+}
+.btn3:hover{
+	color: #fff;
+	background-color: #ad5251;
+}
+
+
+/********** 개별 영역 선언 시작 ********* */
+
+/* *** Sub1 Page Contents Area Start *** */
+
+/* Section1 Area Start */
+.sub1 #p-contents .section1{
+	width: 100%; padding: 105px 0;
+}
+
+.sub1 #p-contents .section1 section>img{
+	float: left;
+}
+.sub1 #p-contents .section1 section>div{
+	float: right;
+	width: 570px; height: 315px;
+}
+
+.sub1 #p-contents .section1 section h3{
+	width: 100%; height: 42px;
+	font: bold 1.8em/42px 'Nanum Gothic',sans-serif;
+	margin-bottom: 21px; color: #939393;
+}
+.sub1 #p-contents .section1 section h3 em{
+	color: #1d1d1d
+}
+.sub1 #p-contents .section1 section p{
+	margin-bottom: 21px;
+}
+
+
+/* Section2 Area Start */
+.sub1 .section2{
+	background-color: #dedede; 
+	padding: 42px 0;
+}
+.sub1 .section2 section{
+	width: 570px; height: auto;
+}
+.sub1 .section2 section:first-child{
+	float: left;
+}
+.sub1 .section2 section:last-child{
+	float: right;
+}
+
+.sub1 .section2 section h3{
+	width: 100%; height: 42px;
+	color: #979797;
+	font: bold 2.2em/42px 'Nanum Gothic',sans-serif;
+	margin-bottom: 21px;
+}
+.sub1 .section2 section h3 em{
+	color: #1d1d1d
+}
+
+
+/* left Section */
+.sub1 .section2 section:first-child p{
+	margin-bottom: 21px;
+}
+.sub1 .section2 section:first-child ul{
+	width: 100%;
+}
+.sub1 .section2 section:first-child li{
+	height: 45px; 
+	margin-bottom: 5px;
+	border-bottom: 4px solid #c00;
+	font: bold 1em/45px 'Lato',sans-serif;
+	text-indent: 5px;
+	position: relative;
+}
+.sub1 .section2 section:first-child li:nth-child(1){
+	width: 98%;	
+}
+.sub1 .section2 section:first-child li:nth-child(2){
+	width: 95%;	
+}
+.sub1 .section2 section:first-child li:nth-child(3){
+	width: 82%;	
+}
+.sub1 .section2 section:first-child span{
+	display: block;	width: 65px; height: 25px;
+	color: #fff; background-color: #000;
+	font: bold 0.8em/25px "맑은 고딕",sans-serif;
+	text-align: center;
+	position: absolute; right: 0; top: 5px;
+	border-radius: 5px;
+}
+.sub1 .section2 section:first-child span:after{
+	content:''; display: block;
+	width: 10px; height: 10px;
+	background-color: #000;
+	position: absolute; left: 50%; bottom: -1px;
+	margin-left: -5px;
+	z-index: -1;
+
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+
+
+/* right Section */
+.sub1 .section2 .qna{width: 100%;}
+.sub1 .section2 .qna li{
+	width: 100%; margin-bottom: 10px;
+}
+.sub1 .section2 .qna li h4{
+	width: 100%; height: 35px;
+	font: bold 1em/35px 'Nanum Gothic',sans-serif;
+	text-indent: 10px; cursor: pointer;
+	background:#b1b1b1 url(../images/sub/bullet-down.png) 97% 50% no-repeat;
+}
+
+.sub1 .section2 .qna li p{
+	width: 100%; padding: 20px 30px;
+	background-color: #d5d5d5;
+	font-size: 1em; display: none;
+}
+
+/* Qna Background Toggle Setting */
+.qna-act{
+	background-image: url(../images/sub/bullet-up.png) !important;
+}
+
+
+/* *** Sub2 Page Contents Area Start *** */
+.sub2 #p-contents{padding: 63px 0 105px;}
+.sub2 #p-contents .container>p{
+	width: 710px; height: 42px;
+	margin-bottom: 84px;
+}
+
+/* Gallery Menu Start */
+.sub2 .g-menu{
+	width: 100%; padding: 30px 0;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 63px;
+}
+.sub2 .g-menu li{
+	height: 42px; float: left; margin-right: 10px;
+}
+.sub2 .g-menu li a{
+	display: block; height: 42px; padding: 0 20px;
+	font: bold 1em/42px 'Nanum Gothic',sans-serif;
+	background-color: #eee;
+}
+.sub2 .g-menu li a:hover{background-color: #fc0;}
+
+
+
+/* Gallery Start */
+.sub2 #gallery{width: 100%;}
+.sub2 #gallery .grid-item{
+	width: 23%; 
+	height: 273px;
+	margin: 0 1% 2%;
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+
+.sub2 #gallery .grid-item>div{
+	width: 100%; height: 189px;
+	position: relative; margin-bottom: 21px;	
+}
+
+.sub2 #gallery .grid-item img{
+	width: 100%; height: 100%;
+}
+
+.sub2 #gallery .grid-item .caption{
+	width: 220px; height: 159px;
+	background-color: rgba(245, 40, 5, 0.5);
+	position: absolute; left: 50%; top: 50%;
+	margin-left: -110px; margin-top: -79px;
+	font-size: 30px; color: #fff; text-align: center;
+	line-height: 159px;
+
+	opacity: 0;
+
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+	-o-transition: all ease 0.7s;
+	transition: all ease 0.7s;
+
+	-webkit-transform: scale(0.2);
+	-moz-transform: scale(0.2);
+	-o-transform: scale(0.2);
+	transform: scale(0.2);
+}
+
+.sub2 #gallery .grid-item>div:hover .caption{
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+.sub2 #gallery .grid-item>p{
+	font-size: 1.2em; 
+	font-weight: bold;
+	text-align: center;
+}
+.sub2 #gallery .grid-item>p span{
+	display: block; color: #c30; 
+	font-weight: normal;
+}
+
+
+/* lightBox Setting */
+#lightbox-container-image-data-box{
+	box-sizing: content-box;
+}
+
+
+/* *** Sub3 Page Contents Area Start *** */
+.sub3 #p-contents{padding-top: 63px;}
+.sub3 #p-contents .container>p{
+	width: 650px; height: 42px;
+	margin-bottom: 63px;
+}
+
+.sub3 .faq{width: 90%; margin: 0 auto 105px}
+.sub3 .faq li{
+	width: 100%; margin-bottom: 10px;
+}
+.sub3 .faq li h3{
+	width: 100%; height: 35px;
+	font: bold 1em/35px 'Nanum Gothic',sans-serif;
+	text-indent: 10px; 
+	background:#b1b1b1 url(../images/sub/bullet-down.png) 97% 50% no-repeat;
+}
+
+.sub3 .faq li p{
+	width: 100%; padding: 20px 30px;
+	background-color: #d5d5d5;
+	font-size: 1em; display: none;
+}
+
+
+
+/* *** Sub4 Page Contents Area Start *** */
+
+.sub4 #p-contents{padding: 63px 0 105px;}
+
+/* left Area Start */
+.sub4 #p-contents .form{
+	width: 870px; float: left;
+}
+
+/* Google-Map */
+.sub4 #p-contents #map_canvas{
+  width: 870px; height: 210px;
+  border: 1px solid #ccc;
+  margin-bottom: 63px;
+}
+
+.sub4 #p-contents .form>p{
+	margin-bottom: 63px;
+}
+
+
+/* Form */
+.sub4 .form form{
+	width: 730px; margin: auto;
+}
+.sub4 .form form fieldset{
+	border: 0;
+}
+.sub4 .form form fieldset li{
+	margin-bottom: 21px;
+}
+
+.sub4 .form form .form-group{
+	width: 48%; height: 63px;
+}
+.sub4 .form form .form-group:first-child{
+	float: left;
+}
+.sub4 .form form .form-group:last-child{
+	float: right;
+}
+
+.sub4 .form form label{
+	display: block; width: 100%; height: 21px;
+	font: bold 0.8em/21px 'Nanum Gothic',sans-serif;
+}
+.sub4 .form form input[type],
+.sub4 .form form textarea{
+	width: 100%; border: 1px solid #e2e2e2;
+	background-color: #f2f2f2;
+	font-size: 0.8em;
+}
+.sub4 .form form input[type]{
+	height: 42px; line-height: 42px;
+	text-indent: 3px;
+}
+.sub4 .form form textarea{
+	padding: 5px 5px 5px 3px;
+}
+
+.sub4 #b1{
+	background-color: #ad5251;
+	color: #fff;
+	cursor: pointer;
+}
+.sub4 #b1:hover{background-color: #50adae;}
+
+
+/* right Area Start */
+.sub4 #p-contents .visit{
+	width: 270px; float: right;
+}
+
+.sub4 #p-contents .visit h3{
+	width: 100%; height: 42px; 
+	margin-bottom: 21px;
+	font: 2.2em/42px 'Roboto',sans-serif;
+}
+.sub4 #p-contents .visit h4{
+	width: 100%; height: 42px; 
+	margin-bottom: 21px;
+	font: 2em/42px 'Roboto',sans-serif;
+}
+.sub4 #p-contents .visit p{
+	width: 100%;
+	margin-bottom: 42px;
+}
+
+.sub4 .address{
+	width: 100%; padding: 42px 0;
+	border-top: 4px double #ccc;
+	border-bottom: 4px double #ccc;
+	margin-bottom: 42px;
+}
+.sub4 .address li{margin-bottom: 10px;}
+.sub4 .address li i{color: #888;}
+.sub4 .address li:nth-child(1) i{margin-right: 6px;}
+.sub4 .address li:nth-child(2) i{margin-right: 4px;}
+
+.sub4 h4+ul li{margin-bottom: 10px;}

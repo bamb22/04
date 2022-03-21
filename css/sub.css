@@ -1,0 +1,397 @@
+@charset "utf-8";
+
+@import url(reset.css);
+
+
+/* **************** 레이아웃 구성 시작 **************** */
+#wrap, #wrap>div{ width: 100%; }
+
+#header { height: 63px; }
+#contents .p-title{ 
+	width: 100%; height: 105px; background-color: #dbdbdb;
+	border-top: 3px solid #c6c6c6;
+}
+#contents .p-content{ width: 100%; }
+#footer {
+  height: 126px;
+  padding: 42px 0;
+  background-color: #333;
+}
+
+.container {
+  width: 1170px;
+  height: 100%;
+  margin: auto;
+}
+
+
+
+/* **************** 공통영역 선언 시작 **************** */
+
+/* ****** header Area Start ****** */
+/* Site Logo */
+
+#header h1 {
+  width: 100px;
+  height: 63px;
+  float: left;
+}
+
+#header h1 a {
+  width: 100%;
+  height: 100%;
+  background: url(../images/index/i_logo.jpg) 0 50% no-repeat;
+}
+
+
+/* Gnb */
+
+#header .gnb {
+  width: 610px;
+  height: 63px;
+  float: right;
+}
+
+#header .gnb li {
+  float: left;
+  height: 63px;
+}
+
+#header .gnb li a {
+  display: block;
+  padding: 0 25px;
+  height: 63px;
+  font: bold 1em/63px "Nanum Gothic", sans-serif;
+  position: relative;
+}
+
+#header .gnb li a:hover {
+  color: #c00;
+}
+
+#header .gnb li a:hover:after {
+  content: '';
+  display: block;
+  width: 80%;
+  height: 3px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background-color: #c00;
+
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+
+
+
+
+/* ****** footer Area Start ****** */
+#footer p {
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  color: #fff;
+  padding-left: 70px;
+}
+
+/* ****** p-title Area Start ****** */
+.p-title{ padding: 21px 0; }
+.p-title .container{ position: relative; }
+.p-title h2{
+	width: 500px; height: 42px;
+	font: 700 3em/42px "Nanum Gothic",sans-serif;
+}
+.p-title p{ color: #2d2d2d; }
+.p-title .page-nav{
+	width: 350px; height: 21px; 
+	font: 500 1.4em/21px "Roboto",sans-serif;
+	position: absolute; right: 85px; bottom: 0px;
+	text-align: right;
+}
+.p-title .page-nav span{
+	color: #c30; margin-left: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ad5152;
+  color: #fff;
+  padding: 0 35px;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 1.4em;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.btn1:hover {
+  background-color: #50adae;
+}
+
+.btn2 {
+  font-size: 1em;
+  color: #2d2d2d;
+  line-height: 37px;
+  background-color: transparent;
+  border: 2px solid rgba(149, 149, 149, 1);
+}
+
+.btn2:hover {
+  border-color: rgba(149, 149, 149, 0);
+  background-color: #ad5152;
+  color: #fff;
+}
+
+
+
+
+
+/* **************** 개별영역 선언 시작 **************** */
+
+/* ****** Sub1 Page Area Start ****** */
+
+/* p-top Area Start */
+.sub1 .p-content .p-top{ 
+	width: 100%; padding: 105px 0; 
+}
+.sub1 .p-content .p-top .container>img{ width: 570px; height: 336px; float: left; }
+.sub1 .p-content .p-top .container>div{ width: 570px; height: 336px; float: right; }
+.sub1 .p-content .p-top .container h3{ 
+	width: 100%; height: 42px;
+	font: 700 2em/42px "Nanum Gothic",sans-serif;
+	color: #666;
+}
+.sub1 .p-content .p-top .container h3 span{color: #2d2d2d;}
+.sub1 .p-content .p-top .container p{ margin-bottom: 21px; }
+
+/* p-bottom Area Start */
+.sub1 .p-content .p-bottom{ 
+	width: 100%; padding: 63px 0 84px;
+	background-color: #dedede; 
+}
+.sub1 .p-content .p-bottom .container>div{
+	width: 570px;
+}
+
+.sub1 .p-content .p-bottom h3{
+	width: 100%; height: 42px;
+	font: 700 2.4em/42px "Nanum Gothic",sans-serif;
+	color: #666;
+	margin-bottom: 21px;
+}
+.sub1 .p-content .p-bottom h3 span{color: #2d2d2d;}
+
+/* left-box Area Start */
+.sub1 .p-content .p-bottom .left-box{ float: left; }
+.sub1 .p-content .p-bottom .left-box p{ margin-bottom: 21px; }
+.sub1 .p-content .p-bottom .left-box p+p{ margin-bottom: 42px; }
+.sub1 .progress{ width: 100%; overflow: hidden;}
+.sub1 .progress li{ 
+	width: 0; height: 47px; margin-bottom: 16px;
+	border-bottom: 5px solid #c00; position: relative;
+}
+.sub1 .progress li h4{ 
+	width: 200px; height: 42px;
+	font: 700 1.2em/42px "Nanum Gothic",sans-serif;
+	color: #2d2d2d; 
+	text-indent: 10px;
+}
+.sub1 .progress li span{
+	display: block; width: 80px; height: 30px;
+	background-color: #333; color: #fff;
+	position: absolute; right: 0; bottom: 10px;
+	text-align: center; line-height: 30px;
+ 
+ 	-webkit-border-radius: 5px;
+ 	-moz-border-radius: 5px;
+ 	border-radius: 5px;
+}
+.sub1 .progress li span:after{
+	content:''; display: block;
+	width: 6px; height: 6px;
+	background-color: #333;
+	position: absolute; left: 50%; bottom: -3px;
+	margin-left: -3px;
+
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+
+
+/* Right-box Area Start */
+.sub1 .p-content .p-bottom .right-box{ float: right; }
+.sub1 .p-content .p-bottom .right-box p{font-size: 1em;}
+
+.sub1 .qna{ width: 100%; }
+.sub1 .qna li{ 
+	width: 100%; margin-bottom: 10px;
+}
+.sub1 .qna li h4{ 
+	width: 100%; height: 42px; 
+	font: 700 1.2em/42px "Nanum Gothic",sans-serif;
+	text-indent: 20px;
+	background: #b1b1b1 url(../images/sub/b1_bul-down.png) 95% 50% no-repeat; 
+}
+.sub1 .qna li p{ 
+	padding: 21px 30px; background-color: #c7c7c7; 
+	display: none;
+}
+
+
+/* Toggle Class Setting */
+.title-act{ background-image: url(../images/sub/b1_bul-up.png) !important; }
+
+
+
+
+/* ****** Sub2 Page Area Start ****** */
+.sub2 .p-content{ padding-top: 63px; }
+.sub2 .p-content .container>p{ margin-bottom: 63px; }
+
+
+/* gmenu */
+.sub2 .p-content .gmenu{
+	width: 100%; padding: 20px 0;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 63px;
+}
+.sub2 .p-content .gmenu ul{ width: 600px; height: 42px; }
+.sub2 .p-content .gmenu li{ 
+	width: 130px; height: 42px; float: left;
+	margin-right: 20px; 
+}
+.sub2 .p-content .gmenu li a{
+	display: block; width: 100%; height: 100%;
+	font: 500 1em/42px "Roboto",sans-serif;
+	text-align: center;
+	background-color: #eee;
+}
+.sub2 .p-content .gmenu li a:hover{
+	background-color: #fc0;
+}
+
+/* gallery */
+.sub2 #img-box{ width: 100%; margin-bottom: 105px; }
+.sub2 #img-box .grid-item{ 
+	width: 23%; height: 278px; 
+	margin: 0 1% 21px; border: 1px solid #ccc;
+	text-align: center;
+}
+.sub2 #img-box .grid-item img{ 
+	width: 100%; height: 189px; 
+	margin-bottom: 21px;
+}
+.sub2 #img-box .grid-item:nth-child(4n){ margin-right: 0; }
+.sub2 #img-box .grid-item ul{ width: 100%; }
+.sub2 #img-box .grid-item li{
+	width: 100%; height: 21px; line-height: 21px;
+}
+.sub2 #img-box .grid-item li:first-child{ font-weight: bold; }
+.sub2 #img-box .grid-item li:last-child{ color: #c30; }
+
+
+
+/* lightBox Reset */
+#lightbox-container-image-data-box{ box-sizing: content-box; }
+
+
+
+
+
+/* ****** Sub3 Page Area Start ****** */
+.sub3 .p-content .container{ padding-top: 63px; }
+.sub3 .p-content .container>p{ margin-bottom: 42px; }
+
+/* FAQ */
+.sub3 .faq{ width: 87%; margin: 0 auto 150px; }
+.sub3 .faq li{ 
+	width: 100%; margin-bottom: 10px;
+}
+.sub3 .faq li h3{ 
+	width: 100%; height: 42px; 
+	font: 700 1.2em/42px "Nanum Gothic",sans-serif;
+	text-indent: 20px;
+	background: #b1b1b1 url(../images/sub/b1_bul-down.png) 97% 50% no-repeat; 
+}
+.sub3 .faq li p{ 
+	font-size: 1em;
+	padding: 42px 30px; background-color: #c7c7c7; 
+	display: none;
+}
+
+
+/* ****** Sub4 Page Area Start ****** */
+
+.sub4 .p-content{ padding: 63px 0 105px; }
+
+/* contact-box Area Start */
+.sub4 .p-content .contact-box{ width: 870px; float: left; }
+
+/* Google map */
+#map_canvas {
+  width: 870px; height: 231px;
+  border: 1px solid #ccc; margin-bottom: 63px;
+}
+
+.sub4 .contact-box>p{ 
+	width: 100%; height: 21px; line-height: 21px; 
+	margin-bottom: 42px; font-size: 1.6em;
+}
+
+/* Form */
+.sub4 form{ width: 87%; margin: auto; }
+.sub4 form fieldset{ border: 0; }
+.sub4 form li{ margin-bottom: 21px; }
+.sub4 form .clearfix>div{ width: 48%; height: 63px; }
+.sub4 form .clearfix>div:first-child{ float: left; }
+.sub4 form .clearfix>div:last-child{ float: right; }
+.sub4 form label{ 
+	display: block; width: 100%; height: 21px; margin-bottom: 5px;
+	font: 700 0.7em/21px "Nanum Gothic",sans-serif;
+}
+
+.sub4 form input[type='text'], .sub4 form textarea{
+	border: 1px solid #ccc; background-color: #e2e2e2;
+	width: 100%; font-size: 0.8em;
+}
+.sub4 form input[type='text']{
+	height: 42px; line-height: 42; text-indent: 3px;
+}
+.sub4 form textarea{ padding: 10px; }
+.sub4 form>p{ padding-left: 10px; }
+.sub4 form>p input{
+	width: 150px; height: 42px; font-size: 0.8em;
+	border: 0; padding: 0;
+}
+
+/* visit-box Area Start */
+.sub4 .p-content .visit-box{ width: 270px; float: right; }
+.sub4 .p-content .visit-box h3{
+	width: 100%; height: 42px;
+	font: 700 2.4em/42px "Nanum Gothic",sans-serif;	
+	margin-bottom: 21px;
+}
+.sub4 .p-content .visit-box h4{
+	width: 100%; height: 42px;
+	font: 700 1.9em/42px "Nanum Gothic",sans-serif;	
+	margin-bottom: 21px;
+}
+.sub4 .p-content .visit-box p{ margin-bottom: 42px; }
+.sub4 .p-content .visit-box address{
+	border-top: 4px double  #ccc;
+	border-bottom: 4px double  #ccc;
+	padding: 30px 0; margin-bottom: 42px;
+	line-height: 36px;
+	font-style: normal;
+}
+.sub4 .p-content .visit-box address i{color: #888;}
+.sub4 .p-content .visit-box li{ margin-bottom: 10px; }

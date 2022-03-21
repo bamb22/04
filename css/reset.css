@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+
+
+
+
+/* Google Webfont 
+1. 나눔고딕 : "Nanum Gothic", sans-serif;
+2. 로보토 : "Roboto", sans-serif;
+3. 오픈산스 : "Open Sans", sans-serif; */
+
+@import url(https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,400,500);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,500');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+/* Basic Reset */
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+dl {
+  text-indent: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+label,
+input {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+/* Point Reset */
+
+body {
+  font-size: 10px;
+  font-family: "맑은 고딕", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol,
+dl,
+table,
+form,
+p,
+address,
+blockquote {
+  font-size: 1.4em;
+  /* 폰트 사이즈 상대단위 설정 공식 :;
+  target / context = result <- 14/10 = 1.4em */
+}
+
+p {
+  line-height: 1.5;
+}
+
+
+
+
+
+/* help Class */
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.screen-hidden {
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.ir {
+  display: block;
+  text-indent: -9999px;
+  overflow: hidden;
+}

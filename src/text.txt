@@ -1,0 +1,44 @@
+RETINA
+Creative Web Design Agent
+레티나 웹에이전시
+
+[ Nanigation ]
+HOME  ABOUT  PORTFOLIO TREND  FAQ  CONTACT
+
+* over-color : #cf3d0f
+
+[ Mainview ]
+DO YOU NEED A NEW
+WEB DESIGN?
+Check Retina included features and option
+
+당신의 비지니스 성장은 위해 레티나가 함께 합니다.
+The best way to grow your business on the internet.
+
+Get Start ( bgcolor -  #ad5251 /  #50adae )
+
+[ Contents ]
+
+1. Section1
+  * Icon Color : #0faf97
+
+  * Font Icon Name :  
+   1) fa-desktop : 
+      <i class="fa fa-desktop" aria-hidden="true"></i>
+     
+   2) fa-magic :
+      <i class="fa fa-magic" aria-hidden="true"></i>
+
+   3) fa-users
+      <i class="fa fa-users" aria-hidden="true"></i>
+
+
+[ Section3 ]
+
+* Button Color ( #979797  /  #ab5750 )
+
+* Button Text (PURCHASE RETINA  /  WHY US?)
+
+
+
+   

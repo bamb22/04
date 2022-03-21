@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    
+    <title>레티나 웹에이전시</title>
+
+    <!-- font-awesome CSS -->
+    <link href="../css/font-awesome.css" rel="stylesheet">
+
+    <!-- normalize CSS -->
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../css/sub.css">
+
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.js"></script>      
+      <script src="../js/IE9.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+    <div id="wrap" class="sub3">
+      
+      <!-- header Area Start -->
+      <header id="header">        
+        <div class="container">
+          
+          <!-- Site Logo -->
+          <h1>
+            <a href="main.html" class="ir">레티나 웹에이전시</a>
+          </h1>
+
+          <!-- Gnb -->
+          <nav class="gnb">
+            <ul>              
+              <li><a href="main.html">HOME</a></li>
+              <li><a href="sub1.html">ABOUT</a></li>
+              <li><a href="sub2.html">PORTFOLIO</a></li>
+              <li><a href="#">TREND</a></li>
+              <li><a href="sub3.html">FAQ</a></li>
+              <li><a href="sub4.html">CONTACT</a></li>
+            </ul>
+          </nav>
+
+        </div>
+      </header> <!-- header Area End -->
+
+
+      <div id="contents">
+
+        <!-- Page-title Area Start -->
+        <div id="p-title">        
+          <div class="container">
+        
+            <h2>FAQ</h2>
+            <p>질문을 남겨주시면 빠른 시간내에 답변을 드리도록 하겠습니다.</p>
+            
+            <div class="page-navi">
+              HOME <em>FAQ</em>
+            </div>
+        
+          </div>
+        </div> <!-- Page-title Area End -->
+        
+        
+        <!-- Page-contents Area Start -->
+        <div id="p-contents">
+          <div class="container">
+          
+            <p>고객님과 만나게 된 것을 매우 기쁘고 감사하게 생각합니다. 아래 게시판에 문의 내용을 작성해 주시면 오랜 기간 쌓아온 프로젝트 수행 노하우를 바탕으로 쉽고 친절하게 답변해 드릴 것입니다.</p>
+        
+            <ul class="faq">
+              <li>
+                <h3>1. 고객분들이 자주 남기시는 질문입니다.</h3>
+                <p>다양한 고객의 까다로운 검증에 통과한 신뢰 받는 기업이라는 것을 의미합니다. 초심을 잃지 않고 고객과의 약속을 소중하게 생각하며 고객의 발전을 위해 진심으로 노력하는 기업입니다.</p>
+              </li>
+              <li>
+                <h3>2. 고객분들이 자주 남기시는 질문입니다.</h3>
+                <p>다양한 고객의 까다로운 검증에 통과한 신뢰 받는 기업이라는 것을 의미합니다. 초심을 잃지 않고 고객과의 약속을 소중하게 생각하며 고객의 발전을 위해 진심으로 노력하는 기업입니다.</p>
+              </li>
+              <li>
+                <h3>3. 고객분들이 자주 남기시는 질문입니다.</h3>
+                <p>다양한 고객의 까다로운 검증에 통과한 신뢰 받는 기업이라는 것을 의미합니다. 초심을 잃지 않고 고객과의 약속을 소중하게 생각하며 고객의 발전을 위해 진심으로 노력하는 기업입니다.</p>
+              </li>
+              <li>
+                <h3>4. 고객분들이 자주 남기시는 질문입니다.</h3>
+                <p>다양한 고객의 까다로운 검증에 통과한 신뢰 받는 기업이라는 것을 의미합니다. 초심을 잃지 않고 고객과의 약속을 소중하게 생각하며 고객의 발전을 위해 진심으로 노력하는 기업입니다.</p>
+              </li>
+              <li>
+                <h3>5. 고객분들이 자주 남기시는 질문입니다.</h3>
+                <p>다양한 고객의 까다로운 검증에 통과한 신뢰 받는 기업이라는 것을 의미합니다. 초심을 잃지 않고 고객과의 약속을 소중하게 생각하며 고객의 발전을 위해 진심으로 노력하는 기업입니다.</p>
+              </li>
+            </ul>
+        
+          </div>  <!-- container Area End -->
+        </div> <!-- Page-contents Area End -->
+
+      </div> <!-- contents Area End -->
+
+      
+      <!-- footer Area Start -->
+      <footer id="footer">
+        <div class="container">
+          
+          <p>Coright 2018 &copy; Retina.com All Rights Reserved.</p>
+
+        </div>    
+      </footer> <!-- footer Area End -->
+
+    </div> <!-- Wrap Area End -->
+
+
+    <!-- jQuery Insert -->
+    <script src="../js/jquery-1.9.1.min.js"></script> 
+
+    <!-- My JS -->
+    <script>      
+      $(function(){ 
+        var qnaMenu = $('.faq h3');
+
+        qnaMenu.click(function(){
+          $(this).toggleClass('qna-act').next().slideToggle(400);
+        });
+      });
+    </script>
+
+  </body>
+</html>
